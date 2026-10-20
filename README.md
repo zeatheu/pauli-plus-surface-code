@@ -62,56 +62,6 @@ $$\epsilon_d = 1 - (1 - P_{\text{fail}})^{1/r}, \qquad \Lambda_{3/5} = \frac{\ep
 
 ---
 
-## 📂 Repository Structure
-
-```text
-pauli-plus-surface-code/
-├── .github/
-│   └── workflows/
-│       └── ci.yml              # Automated testing of Stim circuits
-├── data/
-│   ├── d3_shots.csv            # Pre-sampled detection event data
-│   └── d5_shots.csv
-├── notebooks/
-│   └── pauli_plus_simulation.ipynb   # Complete Colab notebook with plots
-├── src/
-│   └── pauli_plus/
-│       ├── __init__.py
-│       ├── circuits.py          # Stim rotated memory circuit generators
-│       ├── decoder.py           # PyMatching MWPM wrapper
-│       └── noise.py             # Custom Pauli+ leakage state tracker
-├── tests/
-│   └── test_circuits.py         # Pytest verification suite
-├── LICENSE
-├── README.md
-└── pyproject.toml
-```
-
----
-
-## ⚡ Quickstart
-
-### Option 1: Run in Google Colab
-Click the badge at the top of this README to launch the notebook directly in Google Colab with pre-installed dependencies and automatic plotting.
-
-### Option 2: Local Installation
-
-```bash
-# 1. Clone repository
-git clone [https://github.com/YOUR_USERNAME/pauli-plus-surface-code.git](https://github.com/YOUR_USERNAME/pauli-plus-surface-code.git)
-cd pauli-plus-surface-code
-
-# 2. Set up virtual environment and install dependencies
-python3 -m venv venv
-source venv/bin/activate
-pip install -e .
-
-# 3. Run unit tests
-pytest
-```
-
----
-
 ## 📜 Citation & References
 
 If you use this code or reference these simulations in your work, please cite the original Google Quantum AI paper:
